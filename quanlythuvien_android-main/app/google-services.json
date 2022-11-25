@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "4296489174",
+    "firebase_url": "https://baitaplonthietkephanmem.firebaseio.com",
+    "project_id": "baitaplonthietkephanmem",
+    "storage_bucket": "baitaplonthietkephanmem.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:4296489174:android:6d21a0ba69ca295c",
+        "android_client_info": {
+          "package_name": "com.example.admin.quan_ly_thu_vien"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "4296489174-o7eshmqcitgnqvh7nernjvin3cd8bmt8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDN97igd079YGT4r_3HP8f4529v-dFWTn4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

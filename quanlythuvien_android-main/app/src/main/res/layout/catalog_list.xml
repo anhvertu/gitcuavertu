@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_binh_luan_dong"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="20dp"
+    android:paddingTop="5dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="5dp"
+    android:layout_marginBottom="10dp">
+
+
+    <ImageView
+        android:id="@+id/imgIconDeMuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtTenDeMuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  thể loại"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/gray"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/imgSuaDanhSachDeMuc"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/ic_edit_de_muc" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

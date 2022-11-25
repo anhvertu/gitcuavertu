@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_thong_tin_user"
+            android:icon="@mipmap/ic_my_profile"
+            android:title="@string/thong_tin_cua_toi" />
+        <item
+            android:id="@+id/menu_quan_ly_de_muc"
+            android:icon="@mipmap/ic_manage_heading"
+            android:title="@string/ds_de_muc" />
+        <item
+            android:id="@+id/menu_dang_xuat"
+            android:icon="@mipmap/ic_logout"
+            android:title="@string/dang_xuat" />
+    </group>
+</menu>

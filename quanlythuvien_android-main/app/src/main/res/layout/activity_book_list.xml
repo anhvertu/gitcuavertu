@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.BookActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/list_sach_content_above_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar_list_sach"
+            layout="@layout/toolbar" />
+    </FrameLayout>
+
+    <fragment
+        android:layout_below="@+id/list_sach_content_above_toolbar"
+        android:layout_above="@id/list_sach_content_botom_toolbar"
+        android:id="@+id/list_sach_fragment"
+        android:name="com.example.admin.quanLyThuVien.fragments.BooksFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <FrameLayout
+        android:id="@+id/list_sach_content_botom_toolbar"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/list_sach_bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemBackground="@color/colorBottomNav"
+            app:elevation="4dp"
+            app:itemIconTint="@drawable/trang_thai_mau_nav"
+            app:itemTextColor="@drawable/trang_thai_mau_nav"
+            app:menu="@menu/menu_add" />
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>

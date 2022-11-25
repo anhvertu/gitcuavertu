@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.quanLyThuVien">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name="com.example.admin.quanLyThuVien.activitys.CommonVariables"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.admin.quanLyThuVien.activitys.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.admin.quanLyThuVien.activitys.LoginActivity" />
+        <activity android:name="com.example.admin.quanLyThuVien.activitys.ForgotPasswordActivity" />
+        <activity android:name="com.example.admin.quanLyThuVien.activitys.HomeActivity" />
+        <activity android:name="com.example.admin.quanLyThuVien.activitys.BookInforActivity" />
+        <activity android:name="com.example.admin.quanLyThuVien.activitys.BookActivity" />
+        <activity android:name="com.example.admin.quanLyThuVien.activitys.EditBookActivity" />
+        <activity android:name="com.example.admin.quanLyThuVien.activitys.AddBookActivity" />
+        <activity android:name="com.example.admin.quanLyThuVien.activitys.AddUserActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name="com.example.admin.quanLyThuVien.activitys.QRScanActivity" />
+        <activity android:name="com.example.admin.quanLyThuVien.activitys.UserInfoActivity" />
+        <activity android:name="com.example.admin.quanLyThuVien.activitys.EditUserInfoActivity" />
+        <activity android:name="com.example.admin.quanLyThuVien.activitys.RatingActivity" />
+        <activity android:name="com.example.admin.quanLyThuVien.activitys.ChangePasswordActivity" />
+        <activity android:name="com.example.admin.quanLyThuVien.activitys.CataLogActivity" />
+    </application>
+
+</manifest>

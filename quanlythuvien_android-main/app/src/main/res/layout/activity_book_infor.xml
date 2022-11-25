@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.BookInforActivity">
+
+    <FrameLayout
+        android:id="@+id/tt_dau_sach_above_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar_chi_tiet_dau_sach"
+            layout="@layout/toolbar" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tt_dau_sach_above_toolbar"
+        android:layout_alignParentStart="true">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="0dp">
+
+                <ImageView
+                    android:id="@+id/imgAnhDauSachTT"
+                    android:layout_width="120dp"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_book" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="8dp">
+
+                    <TextView
+                        android:id="@+id/txtTenDauSachTT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Doraemon"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtDanhGiaDauSachTT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4,5/5"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textStyle="bold" />
+
+
+                        <RatingBar
+                            android:id="@+id/rbDanhGiaDauSachTT"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginRight="15dp"
+                            android:isIndicator="true"
+                            android:numStars="5"
+                            android:progressTint="@android:color/holo_orange_light"
+                            android:rating="4"
+                            android:scaleX="1.2"
+                            android:scaleY="1.2"
+                            android:stepSize="0.5"
+                            android:transformPivotX="0dp"
+                            android:transformPivotY="0dp" />
+
+
+                        <TextView
+                            android:id="@+id/txtSoNguoiDanhGiaDauSachTT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(51222)"
+                            android:textAppearance="?android:textAppearanceMedium" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtTacGiaDauSachTT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Fujiko"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/txtMaDauSachTT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="S1234567898"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txtChamDanhGiaTT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Chạm để đánh giá quyển sách này"
+                android:textAlignment="center"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="italic" />
+            <!--<Button-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:textColor="#fff"-->
+            <!--android:text="viết đánh giá"-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+            <LinearLayout
+                android:id="@+id/llNoiDungDanhGia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/de_lai_danh_gia"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textStyle="italic" />
+
+                <RatingBar
+                    android:id="@+id/rbVietDanhGiaDauSachTT"
+                    style="?android:attr/ratingBarStyleIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:isIndicator="false"
+                    android:numStars="5"
+                    android:progressTint="@android:color/holo_orange_light"
+                    android:stepSize="1" />
+
+                <TextView
+                    android:id="@+id/txtChuThichDanhGiaTT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtVietDanhGiaDauSachTT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top"
+                    android:hint="@string/viet_danh_gia"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:scrollbars="vertical"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:theme="@style/EditTextCustom" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/btnHuyDanhGiaTT"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/darker_gray"
+                        android:text="@string/huy"
+                        android:textColor="#fff" />
+
+                    <Button
+                        android:id="@+id/btnGuiDanhGiaTT"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="@string/gui_danh_gia"
+                        android:textColor="#fff" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_note" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/tom_luoc_chi_chiet"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/noi_dung_tom_luoc"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/txtTomLuocNoiDungDauSachTT"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="cái gì đó"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/txtViTriDauSachTT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Vị trí: Kệ A-Ngăn A1"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/txtNhaXuatBanDauSachTT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Nhà xuất bản : Fuijko Fuijo"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/txtSoLuongDauSachTT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Số lượng: 20 quyển"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/txtTheLoaiDauSachTT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Thể loại : thiếu nhi"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+
+                <TextView
+                    android:id="@+id/txtNgayXuatBanDauSachTT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Ngày xuất bản: 11/11/2017"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/txtSoTrangDauSachTT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Số Trang: 20 trang"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/txtGiaDauSachTT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Giá: 15000 VNĐ"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:text="Đánh giá và bình luận:"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic" />
+
+            <LinearLayout
+                android:id="@+id/llDanhGiaDauSach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_binh_luan_dong"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcBinhLuanDauSach"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/txtTatCaDanhGiaTT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Tất cả bài đánh giá"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imgAnhDauSachTo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_book"
+        android:visibility="gone" />
+</RelativeLayout>
